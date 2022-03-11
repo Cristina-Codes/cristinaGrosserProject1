@@ -494,4 +494,35 @@ nav .wrapper a:focus {
 }
 .infoSection .flexContainer .info a h4 {
   margin-bottom: 30px;
+}
+.infoSection .flexContainer .info3,
+.infoSection .flexContainer .info4 {
+  margin-bottom: 0;
+}
+
+.banner img {
+  display: block;
+  max-width: 100%;
+}
+
+.founder .flexContainer {
+  padding: 100px 0;
+}
+.founder .flexContainer .founderImage {
+  width: 25%;
+}
+.founder .flexContainer .founderImage img {
+  display: block;
+  max-width: 100%;
+  box-shadow: 20px 20px 0px 0px #F8E71C;
+}
+.founder .flexContainer .founderText {
+  width: 75%;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.founder .flexContainer .founderText .findMoreLink {
+  align-self: flex-start;
 }/*# sourceMappingURL=style.css.map */

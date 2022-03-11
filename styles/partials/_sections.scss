@@ -96,4 +96,38 @@
       }
     }
   }
+  .info3, 
+  .info4 {
+    margin-bottom: 0;
+  }
+}
+
+// .banner section
+.banner img {
+  display: block;
+  max-width: 100%;
+}
+
+// .founder section
+.founder .flexContainer {
+  padding: 100px 0;
+  .founderImage {
+    width: 25%;
+    img {
+      display: block;
+      max-width: 100%;
+      box-shadow: $rightShadow;
+    }
+  }
+
+  .founderText {
+    width: 75%;
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .findMoreLink {
+      align-self: flex-start;
+    }
+  }
 }
