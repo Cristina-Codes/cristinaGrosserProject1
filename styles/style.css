@@ -525,4 +525,12 @@ nav .wrapper a:focus {
 }
 .founder .flexContainer .founderText .findMoreLink {
   align-self: flex-start;
+}
+
+.gallery .flexContainer {
+  justify-content: space-between;
+  padding: 100px 0;
+}
+.gallery .flexContainer img {
+  width: calc(33.3333333333% - 20px);
 }/*# sourceMappingURL=style.css.map */
