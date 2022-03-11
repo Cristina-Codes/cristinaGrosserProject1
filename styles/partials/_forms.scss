@@ -1,0 +1,35 @@
+.contactForm {
+  width: calc(50% - 70px);
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 40px;
+  color: #333;
+  // font-family: $bodyFont;
+  &::placeholder {
+    font-size: 0.8rem;
+    // color: $primary;
+    opacity: 1;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+  }
+  // &:focus {
+  //   border-bottom: 1px solid $primary;
+  // }
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #eee
+}
+
+textarea {
+  min-height: 130px;
+  border: 1px solid #eee;
+  border-top: none;
+}
