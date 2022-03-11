@@ -223,6 +223,12 @@ h1, h2, h3, h4, ul, p {
   margin: 0;
 }
 
+h1 {
+  color: #F0EFED;
+  margin-right: 20px;
+  font-weight: 400;
+}
+
 h2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 4rem;
@@ -270,14 +276,43 @@ a {
   color: #F0EFED;
 }
 
-a:hover,
-a:focus {
-  text-decoration: underline;
-}
-
 footer {
   background: #2C2C2C;
   padding: 10px 0;
   color: white;
   text-align: center;
+}
+footer a:hover,
+footer a:focus {
+  text-decoration: underline;
+}
+
+nav,
+nav .wrapper {
+  display: flex;
+  font-family: "Josefin Sans", sans-serif;
+  background: #2C2C2C;
+  padding: 20px 0;
+}
+nav ul,
+nav .wrapper ul {
+  list-style: none;
+}
+nav li,
+nav .wrapper li {
+  display: inline-block;
+  text-transform: uppercase;
+}
+nav a,
+nav .wrapper a {
+  padding: 30px;
+}
+nav a:hover, nav a:focus,
+nav .wrapper a:hover,
+nav .wrapper a:focus {
+  color: #F8E71C;
+}
+
+.clearNav {
+  background: none;
 }/*# sourceMappingURL=style.css.map */

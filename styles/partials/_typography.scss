@@ -13,9 +13,11 @@ h1, h2, h3, h4, ul, p {
 }
 
 
-// h1 {
-//   font-size: ;
-// }
+h1 {
+  color: $offWhite;
+  margin-right: 20px;
+  font-weight: $reg;
+}
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
