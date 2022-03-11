@@ -464,4 +464,34 @@ nav .wrapper a:focus {
   box-shadow: -20px 20px 0px 0px #F8E71C;
   position: relative;
   top: 20px;
+}
+
+.infoSection .flexContainer {
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+.infoSection .flexContainer .info {
+  display: flex;
+  width: 50%;
+  margin: 30px 0;
+}
+.infoSection .flexContainer .info .iconContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #F8E71C;
+}
+.infoSection .flexContainer .info .iconContainer i {
+  padding-top: 10px;
+}
+.infoSection .flexContainer .info a {
+  display: flex;
+  flex-direction: column;
+  color: #2C2C2C;
+  margin-left: 30px;
+  width: calc(95% - 30px);
+}
+.infoSection .flexContainer .info a h4 {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=style.css.map */

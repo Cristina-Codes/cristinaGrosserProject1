@@ -66,3 +66,34 @@
   position: relative;
   top: 20px;
 }
+
+// .info section
+.infoSection .flexContainer {
+  flex-wrap: wrap;
+  padding: 100px 0;
+  .info {
+    display: flex;
+    width: 50%;
+    margin: 30px 0;
+    .iconContainer {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      background-color: $yellow;
+      i {
+        padding-top: 10px;
+      }
+    }
+    a {
+      display: flex;
+      flex-direction: column;
+      color: $black;
+      margin-left: 30px;
+      width: calc(95% - 30px);
+      h4 {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
