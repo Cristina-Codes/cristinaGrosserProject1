@@ -287,6 +287,28 @@ a {
   position: relative;
 }
 
+section:nth-child(odd) {
+  background: #F0EFED;
+}
+
+button,
+.findMoreLink {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+button a,
+.findMoreLink a {
+  background: #0E902D;
+  padding: 15px 30px;
+}
+button a:hover, button a:focus,
+.findMoreLink a:hover,
+.findMoreLink a:focus {
+  color: #F8E71C;
+}
+
 footer {
   background: #2C2C2C;
   padding: 10px 0;
@@ -379,4 +401,67 @@ nav .wrapper a:focus {
 
 .blogHeader {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
+}
+
+#about .flexContainer {
+  flex-direction: column;
+  padding: 200px 50px;
+}
+#about .flexContainer p {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.readMore {
+  display: flex;
+}
+
+.readMoreFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 60px;
+  text-align: right;
+}
+.readMoreFlex .textContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 65px 0;
+  margin: 0;
+}
+.readMoreFlex .textContainer p {
+  padding: 25px 0 45px 0;
+}
+.readMoreFlex .textContainer .findMoreLink {
+  margin: 0 0 0 auto;
+}
+.readMoreFlex .imgContainer img {
+  max-width: 100%;
+  display: block;
+}
+
+.leftText .wrapper {
+  margin: 0 0 0 auto;
+}
+
+.readMoreFlex:last-of-type {
+  flex-direction: column-reverse;
+  text-align: left;
+  margin-right: 0;
+  margin-left: 60px;
+}
+.readMoreFlex:last-of-type .findMoreLink {
+  margin: 0 auto 0 0;
+}
+
+.leftImage {
+  box-shadow: 20px 20px 0px 0px #F8E71C;
+  position: relative;
+  top: -20px;
+}
+
+.rightImage {
+  box-shadow: -20px 20px 0px 0px #F8E71C;
+  position: relative;
+  top: 20px;
 }/*# sourceMappingURL=style.css.map */

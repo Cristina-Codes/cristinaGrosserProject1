@@ -14,6 +14,28 @@ a {
   position: relative;
 }
 
+section:nth-child(odd) {
+  background: $offWhite;
+}
+
+//buttons
+button, 
+.findMoreLink {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: $bold;
+  line-height: 32px;
+  text-align: center;
+  a {
+    background: $green;
+    padding: 15px 30px;
+    &:hover,
+    &:focus {
+      color: $yellow;
+    }
+  }
+}
+
+
 // footers
 
 footer {

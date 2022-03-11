@@ -1,0 +1,68 @@
+// Home #about
+#about .flexContainer {
+  flex-direction: column;
+  // align-content: space-between;
+  padding: 200px 50px;
+  p {
+    margin: 40px 0;
+    text-align: center;
+  }
+}
+
+// Home .readMore 
+.readMore {
+  display: flex;
+}
+
+.readMoreFlex {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 60px;
+  text-align: right;
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 65px 0;
+    margin: 0;
+    p {
+      padding: 25px 0 45px 0;
+    }
+    .findMoreLink {
+      margin: 0 0 0 auto;
+    }
+  }
+  .imgContainer {
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+}
+
+.leftText .wrapper {
+  margin: 0 0 0 auto;
+}
+
+.readMoreFlex:last-of-type {
+  flex-direction: column-reverse;
+  text-align: left;
+  margin-right: 0;
+  margin-left: 60px;
+  .findMoreLink {
+    margin: 0 auto 0 0;
+  }
+}
+
+//final image styling 
+.leftImage {
+  box-shadow: $rightShadow;
+  position: relative;
+  top: -20px;
+}
+
+.rightImage {
+  box-shadow: $leftShadow;
+  position: relative;
+  top: 20px;
+}
