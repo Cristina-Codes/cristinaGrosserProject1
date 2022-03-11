@@ -24,11 +24,17 @@ h2 {
   font-size: 4rem;
   font-weight: $bold;
   line-height: 92px;
+  color: $yellow;
+  span {
+    color: $offWhite;
+    display: block;
+  }
 }
 
 .home h2 {
   font-size: 8.3rem;
   font-weight: $reg;
+  line-height: 130px;
 }
 
 h3 {
