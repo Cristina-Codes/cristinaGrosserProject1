@@ -12,6 +12,7 @@ nav .wrapper {
     text-transform: uppercase;
   }
   a {
+    font-size: 0.8rem;
     padding: 30px 20px;
     &:hover,
     &:focus {
@@ -22,45 +23,50 @@ nav .wrapper {
 
 .clearNav {
   background: none;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .homeHeader {
   background-image: url(../planted-final-assets/home-image-1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
-  .flexContainer {
-    display: flex;
-    position: relative;
-    .home {
-      z-index: 10;
-      position: absolute;
-      left: 23%;
-      top: 150px;
-    }
-    .headerBox {
-      width: 550px;
-      height: 550px;
-      position: absolute;
-      right: 0;
-      top: 80px;
-      img {
-        display: block;
-        max-width: 100%;
-        max-height: 100%;
-      }
+  background-size: cover;
+  height: 560px;
+  .home {
+    z-index: 10;
+    position: absolute;
+    left: 23%;
+    top: 120px;
+  }
+  .headerBox {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    img {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
     }
   }
 }
 
-.contactHeader {
+.contactHeader,
+.blogHeader {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 90vh;
-  h2 {
-    width: 33%;
+  background-size: cover;
+  height: 500px;
+  .flexContainer {
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    h2 {
+      margin-bottom: 20px;
+    }
+    span {
+      color: $yellow;
+    }
   }
 }
 

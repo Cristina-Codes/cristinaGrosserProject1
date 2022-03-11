@@ -9,6 +9,11 @@ a {
   color: $offWhite;
 }
 
+.flexContainer {
+  display: flex;
+  position: relative;
+}
+
 // footers
 
 footer {
