@@ -1,7 +1,6 @@
 // Home #about
 #about .flexContainer {
   flex-direction: column;
-  // align-content: space-between;
   padding: 200px 50px;
   p {
     margin: 40px 0;
@@ -139,4 +138,39 @@
   img {
     width: calc((100% / 3) - 20px);
   }
+}
+
+// Contact Page
+.contactInfo {
+  width: 30%;
+  margin: 100px 0;
+  .iconList li {
+    display: inline-block;
+  }
+  i {
+    color: $green;
+    padding: 10px;
+    &:hover,
+    &:focus {
+      color: $offWhite;
+      background: $green;
+      border-radius: 50%;
+    }
+  }
+  p {
+    font-weight: $bold;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    margin: 15px 0;
+  }
+  .address {
+    padding-left: 10px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.formContainer {
+  width: 70%;
 }

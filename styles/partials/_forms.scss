@@ -1,35 +1,43 @@
 .contactForm {
-  width: calc(50% - 70px);
-  margin-left: 70px;
+  box-shadow: $formShadow;
+  background: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -200px;
 }
 
 input, textarea {
-  padding: 0 0 10px 5px;
   border: none;
-  margin-bottom: 40px;
-  color: #333;
-  // font-family: $bodyFont;
-  &::placeholder {
-    font-size: 0.8rem;
-    // color: $primary;
-    opacity: 1;
-    line-height: 1.2rem;
-    text-transform: uppercase;
+  padding: 20px;
+  &:hover, 
+  &:focus {
+    outline: 2px solid $green;
   }
-  // &:focus {
-  //   border-bottom: 1px solid $primary;
-  // }
+}
+
+.formInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formInfo,
+textarea,
+button {
+  margin: 20px 70px;
 }
 
 input {
-  border: none;
-  border-bottom: 1px solid #eee
+  border-bottom: 1px solid $green;
 }
 
 textarea {
-  min-height: 130px;
-  border: 1px solid #eee;
-  border-top: none;
+  border: 1px solid $green;
+  resize: none;
+  padding-top: 30px;
+  max-height: 250px;
+}
+
+button {
+  margin-bottom: 40px;
 }

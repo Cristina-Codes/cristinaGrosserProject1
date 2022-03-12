@@ -271,6 +271,12 @@ h4 {
   font-size: 2.1rem;
 }
 
+input, textarea {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
 .wrapper {
   max-width: 1200px;
   width: 85%;
@@ -291,21 +297,29 @@ section:nth-child(odd) {
   background: #F0EFED;
 }
 
-button,
 .findMoreLink {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   line-height: 32px;
   text-align: center;
+  letter-spacing: 1px;
 }
-button a,
 .findMoreLink a {
   background: #0E902D;
   padding: 15px 30px;
 }
-button a:hover, button a:focus,
-.findMoreLink a:hover,
-.findMoreLink a:focus {
+.findMoreLink a:hover, .findMoreLink a:focus {
+  color: #F8E71C;
+}
+
+button {
+  color: #F0EFED;
+  background: #0E902D;
+  padding: 8px 30px;
+  letter-spacing: 1px;
+  border: none;
+}
+button:hover, button:focus {
   color: #F8E71C;
 }
 
@@ -535,45 +549,78 @@ nav .wrapper a:focus {
   width: calc(33.3333333333% - 20px);
 }
 
+.contactInfo {
+  width: 30%;
+  margin: 100px 0;
+}
+.contactInfo .iconList li {
+  display: inline-block;
+}
+.contactInfo i {
+  color: #0E902D;
+  padding: 10px;
+}
+.contactInfo i:hover, .contactInfo i:focus {
+  color: #F0EFED;
+  background: #0E902D;
+  border-radius: 50%;
+}
+.contactInfo p {
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-left: 10px;
+  margin: 15px 0;
+}
+.contactInfo .address {
+  padding-left: 10px;
+}
+.contactInfo .address li {
+  list-style: none;
+}
+
+.formContainer {
+  width: 70%;
+}
+
 .contactForm {
-  width: calc(50% - 70px);
-  margin-left: 70px;
+  box-shadow: -25px 25px 0px -10px #F8E71C;
+  background: #fff;
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: -200px;
 }
 
 input, textarea {
-  padding: 0 0 10px 5px;
   border: none;
-  margin-bottom: 40px;
-  color: #333;
+  padding: 20px;
 }
-input::-moz-placeholder, textarea::-moz-placeholder {
-  font-size: 0.8rem;
-  opacity: 1;
-  line-height: 1.2rem;
-  text-transform: uppercase;
+input:hover, input:focus, textarea:hover, textarea:focus {
+  outline: 2px solid #0E902D;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  font-size: 0.8rem;
-  opacity: 1;
-  line-height: 1.2rem;
-  text-transform: uppercase;
+
+.formInfo {
+  display: flex;
+  justify-content: space-between;
 }
-input::placeholder, textarea::placeholder {
-  font-size: 0.8rem;
-  opacity: 1;
-  line-height: 1.2rem;
-  text-transform: uppercase;
+
+.formInfo,
+textarea,
+button {
+  margin: 20px 70px;
 }
 
 input {
-  border: none;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #0E902D;
 }
 
 textarea {
-  min-height: 130px;
-  border: 1px solid #eee;
-  border-top: none;
+  border: 1px solid #0E902D;
+  resize: none;
+  padding-top: 30px;
+  max-height: 250px;
+}
+
+button {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
