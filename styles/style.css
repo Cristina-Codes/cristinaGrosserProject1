@@ -218,7 +218,7 @@ body {
   line-height: 32px;
 }
 
-h1, h2, h3, h4, ul, p {
+h1, h2, h3, h4, h5, ul, p {
   padding: 0;
   margin: 0;
 }
@@ -269,6 +269,13 @@ h4 {
 
 .founder h4 {
   font-size: 2.1rem;
+}
+
+h5 {
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 input, textarea {
@@ -580,6 +587,51 @@ nav .wrapper a:focus {
 
 .formContainer {
   width: 70%;
+}
+
+.aboutBlog {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.aboutBlog a {
+  color: #2C2C2C;
+}
+.aboutBlog a:hover, .aboutBlog a:focus {
+  font-weight: 700;
+}
+
+.aboutBlogContainer {
+  background: #fff;
+}
+
+.blogTextContainer {
+  padding: 0 40px;
+}
+.blogTextContainer p,
+.blogTextContainer li {
+  font-size: 0.7rem;
+}
+.blogTextContainer ul {
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+
+.aboutBlogContainer p a:first-of-type {
+  font-style: italic;
+  font-weight: 700;
+}
+.aboutBlogContainer p a:first-of-type:hover, .aboutBlogContainer p a:first-of-type:focus {
+  font-size: 0.8rem;
+}
+
+.postsBottom {
+  margin-top: 50px;
+}
+
+.mission {
+  width: 65%;
+  background: #F0EFED;
 }
 
 .contactForm {
