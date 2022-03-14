@@ -26,7 +26,8 @@ figure {
 }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -139,7 +140,8 @@ fieldset {
 }
 
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: inherit;
   display: table;
   max-width: 100%;
@@ -157,7 +159,8 @@ textarea {
 }
 
 [type=checkbox], [type=radio] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -200,11 +203,13 @@ template {
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 /* end snippet */
@@ -296,6 +301,8 @@ a {
 }
 
 .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
@@ -343,6 +350,8 @@ footer a:focus {
 
 nav,
 nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-family: "Josefin Sans", sans-serif;
   background: #050A0C;
@@ -408,8 +417,13 @@ nav .wrapper a:focus {
 .contactHeader .flexContainer,
 .blogHeader .flexContainer {
   height: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .contactHeader .flexContainer h2,
 .blogHeader .flexContainer h2 {
@@ -425,7 +439,10 @@ nav .wrapper a:focus {
 }
 
 #about .flexContainer {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 200px 50px;
 }
 #about .flexContainer p {
@@ -434,19 +451,31 @@ nav .wrapper a:focus {
 }
 
 .readMore {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .readMoreFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 50%;
   margin-right: 60px;
   text-align: right;
 }
 .readMoreFlex .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 65px 0;
   margin: 0;
 }
@@ -466,7 +495,10 @@ nav .wrapper a:focus {
 }
 
 .readMoreFlex:last-of-type {
-  flex-direction: column-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
   text-align: left;
   margin-right: 0;
   margin-left: 60px;
@@ -476,22 +508,27 @@ nav .wrapper a:focus {
 }
 
 .leftImage {
-  box-shadow: 20px 20px 0px 0px #F8E71C;
+  -webkit-box-shadow: 20px 20px 0px 0px #F8E71C;
+          box-shadow: 20px 20px 0px 0px #F8E71C;
   position: relative;
   top: -20px;
 }
 
 .rightImage {
-  box-shadow: -20px 20px 0px 0px #F8E71C;
+  -webkit-box-shadow: -20px 20px 0px 0px #F8E71C;
+          box-shadow: -20px 20px 0px 0px #F8E71C;
   position: relative;
   top: 20px;
 }
 
 .infoSection .flexContainer {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 100px 0;
 }
 .infoSection .flexContainer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 50%;
   margin: 30px 0;
@@ -507,8 +544,13 @@ nav .wrapper a:focus {
   padding-top: 10px;
 }
 .infoSection .flexContainer .info a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #2C2C2C;
   margin-left: 30px;
   width: calc(95% - 30px);
@@ -535,21 +577,32 @@ nav .wrapper a:focus {
 .founder .flexContainer .founderImage img {
   display: block;
   max-width: 100%;
-  box-shadow: 20px 20px 0px 0px #F8E71C;
+  -webkit-box-shadow: 20px 20px 0px 0px #F8E71C;
+          box-shadow: 20px 20px 0px 0px #F8E71C;
 }
 .founder .flexContainer .founderText {
   width: 75%;
   padding-left: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .founder .flexContainer .founderText .findMoreLink {
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .gallery .flexContainer {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 100px 0;
 }
 .gallery .flexContainer img {
@@ -591,8 +644,13 @@ nav .wrapper a:focus {
 
 .aboutBlog {
   width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .aboutBlog a {
   color: #2C2C2C;
@@ -635,10 +693,16 @@ nav .wrapper a:focus {
 }
 
 .contactForm {
-  box-shadow: -25px 25px 0px -10px #F8E71C;
+  -webkit-box-shadow: -25px 25px 0px -10px #F8E71C;
+          box-shadow: -25px 25px 0px -10px #F8E71C;
   background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: -200px;
 }
@@ -652,8 +716,12 @@ input:hover, input:focus, textarea:hover, textarea:focus {
 }
 
 .formInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .formInfo,
@@ -675,4 +743,4 @@ textarea {
 
 button {
   margin-bottom: 40px;
-}/*# sourceMappingURL=style.css.map */
+}
