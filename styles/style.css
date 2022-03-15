@@ -295,7 +295,13 @@ input, textarea {
 
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contactWrapper {
+  max-width: 1200px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -416,7 +422,7 @@ nav .wrapper a:focus {
   background-image: url(../planted-final-assets/contact-header-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
+  height: 400px;
 }
 .contactHeader .flexContainer,
 .blogHeader .flexContainer {
@@ -487,6 +493,7 @@ nav .wrapper a:focus {
 }
 .readMoreFlex .textContainer p {
   padding: 25px 0 45px 0;
+  font-size: 0.8rem;
 }
 .readMoreFlex .textContainer .findMoreLink {
   margin: 0 0 0 auto;
@@ -562,7 +569,10 @@ nav .wrapper a:focus {
   width: calc(95% - 30px);
 }
 .infoSection .flexContainer .info a h4 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.infoSection .flexContainer .info a p {
+  font-size: 0.8rem;
 }
 .infoSection .flexContainer .info3,
 .infoSection .flexContainer .info4 {
@@ -617,7 +627,7 @@ nav .wrapper a:focus {
 
 .contactInfo {
   width: 30%;
-  margin: 100px 0;
+  margin: 100px 0 100px 50px;
 }
 .contactInfo .iconList li {
   display: inline-block;
@@ -632,6 +642,7 @@ nav .wrapper a:focus {
   border-radius: 50%;
 }
 .contactInfo p {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   padding-left: 10px;
@@ -641,7 +652,9 @@ nav .wrapper a:focus {
   padding-left: 10px;
 }
 .contactInfo .address li {
+  font-size: 0.8rem;
   list-style: none;
+  line-height: 1.3rem;
 }
 
 .blogHeader h2 {
@@ -777,13 +790,14 @@ nav .wrapper a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  top: -200px;
+  top: -250px;
 }
 
 .commentForm {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: transparent;
+  top: -200px;
 }
 .commentForm input,
 .commentForm textarea {
