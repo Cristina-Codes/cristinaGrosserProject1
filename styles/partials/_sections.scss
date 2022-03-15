@@ -171,29 +171,30 @@
   }
 }
 
-.formContainer {
-  width: 70%;
+// Blog page
+.blogHeader h2 {
+  padding: 0 0 70px 50px;
 }
 
-// Blog page  ------------ wrapper seems to be having issues
-.aboutBlog {
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  a {
-    color: $black;
-    &:hover,
-    &:focus {
-      font-weight: $bold;
+.blogBody {
+  background: $offWhite;
+}
+
+.flexContainer .aboutPosts {
+  margin-top: 100px;
+  .wrapper {
+    width: 70%;
+    background: #fff;
+    img {
+      position: relative;
+      top: -15px;
+      right: 170px;
     }
   }
 }
 
-.aboutBlogContainer {
-  background: #fff;
-}
-
-.blogTextContainer {
+.aboutDiv,
+.postsDiv {
   padding: 0 40px;
   p,
   li {
@@ -203,24 +204,80 @@
     padding-left: 25px;
     margin-bottom: 30px;
   }
-}
-
-.aboutBlogContainer p a:first-of-type {
-  font-style: italic;
-  font-weight: $bold;
-  &:hover,
-  &:focus {
-    font-size: 0.8rem;
+  a {
+    color: $black;
+    &:hover,
+    &:focus {
+      color: $green;
+    }
   }
 }
 
-.postsBottom {
-  margin-top: 50px;
+.aboutDiv a {
+  font-style: italic;
+  font-weight: $bold;
 }
 
+.postsDiv {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
 
+.movementContainer {
+  position: relative;
+  top: -200px;
+}
 
-.mission {
-  width: 65%;
-  background: $offWhite;
+.missionImgContainer {
+  box-shadow: $formShadow;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.missionStatement {
+  width: 90%;
+  border-left: 7px solid $yellow;
+  border-bottom: 7px solid $yellow;
+  position: relative;
+  left: -15px;
+  padding: 80px 0 20px 40px;
+  .date {
+    font-style: italic;
+    letter-spacing: 1px;
+    margin: 0 0 40px 0;
+    span {
+      font-weight: $bold;
+    }
+  }
+  p {
+    padding: 10px 0;
+  }
+}
+
+.commentSection {
+  width: 90%;
+  padding: 20px 0 20px 20px;
+  .comment {
+    padding: 20px 0 50px 0;
+    .commentImg {
+      width: 40%;
+      max-width: 82px;
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+    .commentText {
+      padding-left: 30px;
+      .commentDate {
+        font-weight: $bold;
+        font-family: 'Josefin Sans', sans-serif;
+      }
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

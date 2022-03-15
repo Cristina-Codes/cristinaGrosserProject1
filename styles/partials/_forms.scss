@@ -1,4 +1,13 @@
-.contactForm {
+.formContainer {
+  width: 70%;
+}
+
+.blogFormContainer {
+  // margin-right: ;
+}
+
+.contactForm,
+.commentForm {
   box-shadow: $formShadow;
   background: #fff;
   display: flex;
@@ -6,6 +15,27 @@
   position: relative;
   top: -200px;
 }
+
+.commentForm {
+  box-shadow: none;
+  background: transparent;
+  input,
+  textarea {
+    background: transparent;
+  }
+  input {
+    width: 46%;
+  }
+  .formInfo,
+  textarea {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  button {
+    margin-left: 0;
+  }
+}
+
 
 input, textarea {
   border: none;

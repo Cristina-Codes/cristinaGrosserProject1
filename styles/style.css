@@ -283,6 +283,10 @@ h5 {
   margin: 10px 0;
 }
 
+.commentSection h5 {
+  font-size: 1.4rem;
+}
+
 input, textarea {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -436,6 +440,8 @@ nav .wrapper a:focus {
 
 .blogHeader {
   background-image: url(../planted-final-assets/blog-header-1.jpg);
+  background-size: contain;
+  height: 400px;
 }
 
 #about .flexContainer {
@@ -638,61 +644,128 @@ nav .wrapper a:focus {
   list-style: none;
 }
 
+.blogHeader h2 {
+  padding: 0 0 70px 50px;
+}
+
+.blogBody {
+  background: #F0EFED;
+}
+
+.flexContainer .aboutPosts {
+  margin-top: 100px;
+}
+.flexContainer .aboutPosts .wrapper {
+  width: 70%;
+  background: #fff;
+}
+.flexContainer .aboutPosts .wrapper img {
+  position: relative;
+  top: -15px;
+  right: 170px;
+}
+
+.aboutDiv,
+.postsDiv {
+  padding: 0 40px;
+}
+.aboutDiv p,
+.aboutDiv li,
+.postsDiv p,
+.postsDiv li {
+  font-size: 0.7rem;
+}
+.aboutDiv ul,
+.postsDiv ul {
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+.aboutDiv a,
+.postsDiv a {
+  color: #2C2C2C;
+}
+.aboutDiv a:hover, .aboutDiv a:focus,
+.postsDiv a:hover,
+.postsDiv a:focus {
+  color: #0E902D;
+}
+
+.aboutDiv a {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.postsDiv {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.movementContainer {
+  position: relative;
+  top: -200px;
+}
+
+.missionImgContainer {
+  -webkit-box-shadow: -25px 25px 0px -10px #F8E71C;
+          box-shadow: -25px 25px 0px -10px #F8E71C;
+}
+.missionImgContainer img {
+  display: block;
+  width: 100%;
+}
+
+.missionStatement {
+  width: 90%;
+  border-left: 7px solid #F8E71C;
+  border-bottom: 7px solid #F8E71C;
+  position: relative;
+  left: -15px;
+  padding: 80px 0 20px 40px;
+}
+.missionStatement .date {
+  font-style: italic;
+  letter-spacing: 1px;
+  margin: 0 0 40px 0;
+}
+.missionStatement .date span {
+  font-weight: 700;
+}
+.missionStatement p {
+  padding: 10px 0;
+}
+
+.commentSection {
+  width: 90%;
+  padding: 20px 0 20px 20px;
+}
+.commentSection .comment {
+  padding: 20px 0 50px 0;
+}
+.commentSection .comment .commentImg {
+  width: 40%;
+  max-width: 82px;
+}
+.commentSection .comment .commentImg img {
+  display: block;
+  width: 100%;
+}
+.commentSection .comment .commentText {
+  padding-left: 30px;
+}
+.commentSection .comment .commentText .commentDate {
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+}
+.commentSection .comment .commentText p {
+  font-size: 0.8rem;
+}
+
 .formContainer {
   width: 70%;
 }
 
-.aboutBlog {
-  width: 35%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.aboutBlog a {
-  color: #2C2C2C;
-}
-.aboutBlog a:hover, .aboutBlog a:focus {
-  font-weight: 700;
-}
-
-.aboutBlogContainer {
-  background: #fff;
-}
-
-.blogTextContainer {
-  padding: 0 40px;
-}
-.blogTextContainer p,
-.blogTextContainer li {
-  font-size: 0.7rem;
-}
-.blogTextContainer ul {
-  padding-left: 25px;
-  margin-bottom: 30px;
-}
-
-.aboutBlogContainer p a:first-of-type {
-  font-style: italic;
-  font-weight: 700;
-}
-.aboutBlogContainer p a:first-of-type:hover, .aboutBlogContainer p a:first-of-type:focus {
-  font-size: 0.8rem;
-}
-
-.postsBottom {
-  margin-top: 50px;
-}
-
-.mission {
-  width: 65%;
-  background: #F0EFED;
-}
-
-.contactForm {
+.contactForm,
+.commentForm {
   -webkit-box-shadow: -25px 25px 0px -10px #F8E71C;
           box-shadow: -25px 25px 0px -10px #F8E71C;
   background: #fff;
@@ -705,6 +778,27 @@ nav .wrapper a:focus {
           flex-direction: column;
   position: relative;
   top: -200px;
+}
+
+.commentForm {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: transparent;
+}
+.commentForm input,
+.commentForm textarea {
+  background: transparent;
+}
+.commentForm input {
+  width: 46%;
+}
+.commentForm .formInfo,
+.commentForm textarea {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+.commentForm button {
+  margin-left: 0;
 }
 
 input, textarea {

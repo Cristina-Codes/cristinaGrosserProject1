@@ -17,7 +17,7 @@
   <!-- Styling Sheet -->
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="blogBody">
   <nav>
     <div class="wrapper">
       <h1>Planted</h1>
@@ -30,75 +30,78 @@
     </div>
   </nav>
   <header class="blogHeader" id="top">
-    <div class="wrapper flexContainer">
+    <div class="flexContainer wrapper">
       <h2>Blog</h2>
     </div>
   </header>
 
   <main>
     <div class="flexContainer">
-      <section class="aboutBlog">
-        <div class="aboutBlogContainer wrapper">
+      <section class="aboutPosts">
+        <div class="wrapper">
           <img src="./planted-final-assets/side-bar-image.jpg" alt="A window in a stone building">
 
-          <div class="blogTextContainer">
-            <div class="aboutTop">
-              <h5>About Planted</h5>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur Lorem ipsum dolor sit amet consectetur. <a href="./index.html#about">Find out more.</a></p>
-            </div>
+          <div class="aboutDiv">
+            <h5>About Planted</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur Lorem ipsum dolor sit amet. <a href="./index.html#about">Find out more.</a></p>
+          </div><!-- .aboutDiv END -->
 
-            <div class="postsBottom">
-              <h5>Recent Posts</h5>
-              <ul>
-                <li><a href="#">Lorem ipsum dolor sit amet, consectetur.</a></li>
-                <li><a href="#">Modi velit dolorem temporibus ipsum.</a></li>
-                <li><a href="#">Aperiam obcaecati est dolor provident?</a></li>
-                <li><a href="#">Incidunt illum ad neque sequi asperiores.</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+          <div class="postsDiv">
+            <h5>Recent Posts</h5>
+            <ul>
+              <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+              <li><a href="#">Modi velit dolorem temporibus ipsum.</a></li>
+              <li><a href="#">Aperiam obcaecati est dolor provident?</a></li>
+              <li><a href="#">Incidunt illum ad neque.</a></li>
+            </ul>
+          </div><!-- .postsDiv END -->
+        </div><!-- .wrapper END-->
       </section>
 
       <section class="mission">
-        <div class="missionImgContainer">
-          <img src="./planted-final-assets/post-image.jpg" alt="Taller plants that we sell.">
-        </div>
-        <div class="missionText wrapper">
-          <h4>Our mission at Planted</h4>
-          <p class="date">Monday January 21st, 2019 by <span>Yousra</span></p>
-          <div class="blogText">
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-            <p>lorem</p>
-          </div>
-        </div>
-        <div class="commentText wrapper">
-          <h5>Comments:</h5>
-          <div class="comment comment1">
-            <div class="commentImg">
-              <img src="./planted-final-assets/profile-image.jpg" alt="Commenter Jeremy">
+        <div class="movementContainer">
+          <div class="missionImgContainer">
+            <img src="./planted-final-assets/post-image.jpg" alt="Taller plants that we sell.">
+          </div><!-- .missionImgContainer END -->
+
+          <div class="missionStatement">
+            <h4>Our mission at Planted</h4>
+            <p class="date">Monday January 21st, 2019 by <span>Yousra</span></p>
+            <div class="blogText">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda molestias beatae consequuntur fuga aliquid repellat quae iusto porro, velit necessitatibus et laborum dolor dolores sapiente facere.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora deleniti est amet itaque, ut quam soluta necessitatibus dolor! Voluptatem quasi debitis, aliquid rerum velit voluptas ea eos ab voluptate sint odio provident dolorem vero, odit sed?</p>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic nemo nisi optio perferendis accusamus sapiente quasi, totam corrupti nesciunt saepe cum necessitatibus vero sequi, ea repellat nihil at fuga laboriosam atque? Quia veniam, consequuntur nihil nemo inventore blanditiis perferendis perspiciatis numquam accusantium quisquam quibusdam consectetur. Ut possimus quidem id cum eaque ad expedita qui mollitia amet! Commodi error accusantium ab sed modi! Praesentium sint saepe reiciendis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut perferendis rerum ratione, minus inventore error iusto praesentium fuga eos.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ex dolor commodi laborum nobis nam aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div><!-- .blogText END -->
+          </div><!-- .missionStatement END -->
+
+
+          <section class="commentSection">
+            <h5>Comments:</h5>
+            <div class="comment comment1 flexContainer">
+              <div class="commentImg">
+                <img src="./planted-final-assets/profile-image.jpg" alt="Commenter Jeremy">
+              </div><!-- .commentImg END -->
               <div class="commentText">
                 <p class="commentDate">Tuesday October 9th, 2018 by Jeremy</p>
-                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor deleniti temporibus alias, ut iste officia culpa, distinctio possimus pariatur architecto, ipsum est fuga eveniet earum a natus quas placeat dignissimos? Nam, ab officiis architecto hic mollitia exercitationem consectetur temporibus!</p>
-              </div>
-            </div>
-          </div>
+                <p class="commentP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor deleniti temporibus alias, ut iste officia culpa, distinctio possimus pariatur architecto, ipsum est fuga eveniet earum a natus! Lorem ipsum dolor sit amet consectetur.</p>
+              </div><!-- .commentText END -->
+            </div><!-- .comment1 END -->
 
-          <div class="comment comment1">
-            <div class="commentImg">
-              <img src="./planted-final-assets/profile-image-2.jpg" alt="Commenter Julia">
+            <div class="comment comment2 flexContainer">
+              <div class="commentImg">
+                <img src="./planted-final-assets/profile-image-2.jpg" alt="Commenter Julia">
+              </div><!-- .commentImg END -->
               <div class="commentText">
                 <p class="commentDate">Wednesday October 10th, 2018 by Julia</p>
-                <p class="comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, debitis eos provident impedit numquam animi reprehenderit, ad minima optio dignissimos enim eaque aperiam voluptatum obcaecati.</p>
-              </div>
-            </div>
-          </div>
-        </div>
+                <p class="commentP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolor deleniti temporibus alias, ut iste officia culpa, distinctio possimus pariatur architecto!</p>
+              </div><!-- .commentText END -->
+            </div><!-- .comment2 END -->
+          </section><!-- .commentSection END -->
+        </div><!-- .movementContainer END -->
 
-        <div class="formContainer wrapper">
-          <form action="#" method="POST" class="contactForm" name="contactForm">
+        <div class="commentFormContainer">
+          <form action="#" method="POST" class="commentForm" name="commentForm">
             <div class="formInfo">
               <label for="name" class="sr-only">Name</label>
               <input type="text" id="name" placeholder="Name">
@@ -107,14 +110,14 @@
               <input type="email" id="email" placeholder="Email address">
             </div>
 
-            <label for="message" class="sr-only">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <label for="comment" class="sr-only">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
 
-            <button type="submit" class="findMoreLink">Submit</button>
+            <button type="submit" class="findMoreLink">Post Comment</button>
           </form>
-        </div>
-      </section>
-    </div>
+        </div><!-- .formContainer END -->
+      </div><!-- .movementContainer END -->
+    </div><!-- .flexContainer END -->
   </main>
 
   <footer>
