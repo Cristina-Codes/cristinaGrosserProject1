@@ -4,6 +4,7 @@ nav .wrapper {
   font-family: 'Josefin Sans', sans-serif;
   background: $forest;
   padding: 10px 0;
+  position: relative;
   ul {
     list-style: none;
   }
@@ -24,6 +25,47 @@ nav .wrapper {
 .clearNav {
   background: none;
   padding: 20px 0;
+  position: relative;
+}
+
+.slideOutIcon {
+  color: $offWhite;
+  position: absolute;
+  right: 5%;
+  display: none;
+  padding: 10px;
+  padding-top: 0;
+}
+
+.slideOutNav {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: -205px;
+  z-index: 20;
+  transition: all 0.75s ease;
+  border: 2px solid $offWhite;
+  background: $black;
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    li {
+      width: 100%;
+      margin: 20px 50px 20px 0;
+    }
+    a {
+      padding: 20px 50px 20px 30px;
+    }
+  }
+}
+
+input[type=checkbox] {
+  opacity: 0;
+  position: absolute; 
+  &:checked ~ .slideOutNav {
+    right: -35px;
+  }
 }
 
 .homeHeader {
@@ -34,8 +76,10 @@ nav .wrapper {
   .home {
     z-index: 10;
     position: absolute;
-    left: 23%;
     top: 120px;
+    h2 {
+      padding-left: 37%;
+    }
   }
   .headerBox {
     width: 550px;

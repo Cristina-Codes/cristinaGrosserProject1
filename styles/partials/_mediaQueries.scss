@@ -1,0 +1,206 @@
+@media (max-width: 820px) {
+  // Home Page
+  .wrapper {
+    width: 90%;
+  }
+  // Header Section
+  .homeHeader .home h2 {
+    font-size: 6rem;
+    padding-left: 20%;
+  }
+
+  .homeHeader .headerBox {
+    width: 450px;
+    height: 450px;
+    top: 110px;
+  }
+
+  // Info Section
+  .infoSection .flexContainer .info {
+    a {
+      margin-left: 5px;
+    }
+    h4 {
+      margin-top: 10px;
+    }
+  }
+
+  // Founder Section 
+  .founder .flexContainer .founderText {
+    padding-left: 40px;
+    p {
+      font-size: 0.8rem;
+      padding: 20px 0;
+    }
+  }
+}
+
+@media (max-width: 660px) {
+  // Header Section
+  .largeNav {
+    display: none;
+  }
+
+  .slideOutIcon {
+    display: block;
+  }
+
+  input[type=checkbox] { 
+    &:checked ~ .slideOutNav {
+      right: -35px;
+      display: block;
+    }
+  }
+
+  .homeHeader .home h2 {
+    font-size: 4rem;
+    padding-left: 10%;
+    margin-top: 150px;
+    span {
+      max-height: 80px;
+    }
+  }
+
+  .homeHeader .headerBox {
+    display: none;
+  }
+
+  .about .flexContainer {
+    padding: 200px 0;
+  }
+
+  //readMore Section
+  .readMore {
+    flex-direction: column;
+  }
+
+  .readMoreFlex,
+  .readMoreFlex:last-of-type {
+    width: auto;
+    text-align: center;
+    margin: 0 60px;
+    .textContainer .findMoreLink {
+      margin: 0;
+    }
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .readMoreFlex:last-of-type {
+    flex-direction: column;
+  }
+
+  .leftText .wrapper,
+  .rightText .wrapper {
+    margin: 0 auto;
+  }
+
+  // Info Section
+  .infoSection .flexContainer .info {
+    width: auto;
+    margin: 15px;
+    a {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // .homeHeader Section
+  .slideOutNav {
+    right: -450px;
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      li {
+        width: calc(50% - 50px);
+        margin: 20px 10px;
+        text-align: center;
+      }
+      a {
+        padding: 20px 10px;
+      }
+    }
+  }
+
+  .homeHeader .home h2 {
+    margin-top: 50px;
+    font-size: 3rem;
+  }
+
+  // .about Section
+  .about .flexContainer {
+    padding: 70px 0;
+    h3 {
+      line-height: 60px;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+
+  // .readMore Section
+  .readMoreFlex,
+  .readMoreFlex:last-of-type {
+    margin: 0 10px;
+    .imgContainer {
+      box-shadow: none;
+      top: 30px;
+    }
+  }
+
+  // .infoSection
+  .infoSection .flexContainer {
+    padding: 40px 0;
+    .info {
+      h4 {
+        font-size: 1.4rem;
+      }
+      a {
+      margin-left: 5px;
+      }
+    }
+  }
+
+  // .founder Section
+  .founder .flexContainer {
+    flex-direction: column;
+    .founderImage {
+      width: 90%;
+      align-self: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .founderText {
+      margin-top: 60px;
+      padding: 0 10px;
+      text-align: center;
+      width: 100%;
+      h4 {
+        font-size: 1.8rem;
+      }
+      .findMoreLink {
+        align-self: center;
+      }
+    }
+  }
+
+  // .gallery Section
+  .gallery .flexContainer {
+    padding: 50px 0;
+    flex-direction: column;
+    align-content: center;
+    img {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  // footer
+  footer p {
+    font-size: 0.8rem;
+  }
+}
