@@ -849,7 +849,8 @@ input[type=checkbox]:checked ~ .slideOutNav {
   -webkit-box-shadow: none;
           box-shadow: none;
   background: transparent;
-  top: -200px;
+  position: relative;
+  top: -170px;
   padding: 0;
 }
 .commentForm input,
@@ -1277,10 +1278,27 @@ button {
   .commentFormContainer {
     margin: 0 auto;
   }
-  .commentFormContainer .formInfo {
+  .commentFormContainer .commentForm {
+    top: 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+  .commentFormContainer .commentForm .formInfo {
+    margin: 10px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .commentFormContainer .commentForm .formInfo input {
     margin: 0 20px;
   }
-  .commentFormContainer textarea {
-    margin: 0 auto;
+  .commentFormContainer .commentForm textarea {
+    margin: 10px auto;
+    width: 100%;
+  }
+  .commentFormContainer .findMoreLink {
+    margin: 20px auto;
+    width: 100%;
   }
 }

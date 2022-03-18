@@ -16,7 +16,8 @@
 .commentForm {
   box-shadow: none;
   background: transparent;
-  top: -200px;
+  position: relative;
+  top: -170px;
   padding: 0;
   input,
   textarea {

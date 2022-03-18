@@ -55,11 +55,25 @@
 
   .commentFormContainer {
     margin: 0 auto;
-    .formInfo {
-      margin: 0 20px;
-    } 
-    textarea {
+    .commentForm {
+      top: 0;
+      width: 70%;
       margin: 0 auto;
+      .formInfo {
+        margin: 10px auto;
+        flex-direction: row;
+        input {
+          margin: 0 20px;
+        }
+      } 
+      textarea {
+        margin: 10px auto;
+        width: 100%;
+      }
+    }
+    .findMoreLink {
+      margin: 20px auto;
+      width: 100%;
     }
   }
 }
