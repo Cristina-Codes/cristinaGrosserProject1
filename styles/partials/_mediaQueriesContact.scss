@@ -1,0 +1,100 @@
+@media (max-width: 980px) {
+  // Contact Page
+  // .contactHeader
+  .contactHeader .flexContainer {
+    justify-content: flex-start;
+    h2 {
+      margin-top: 100px;
+      text-align: center;
+      span {
+        display: inline-block;
+      }
+    }
+  }
+
+  .contact .flexContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    .contactInfo {
+      margin: 0;
+      position: relative;
+      top: -100px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+    
+  
+
+  //form
+  .formContainer {
+    top: -150px;
+  }
+
+  .formInfo {
+    flex-direction: column;
+    input {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+  }
+
+  input {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .slideOutNav {
+    left: 0;
+    right: 0;
+    ul {
+      flex-direction: row;
+      width: 100%;
+      li {
+        margin: 20px 10px;
+        text-align: center;
+      }
+      a {
+        padding: 20px 10px;
+      }
+    }
+  }
+
+  input[type=checkbox] {
+    &:checked ~ .slideOutNav {
+      right: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  // .contactHeader Section
+  .contactHeader .flexContainer h2 {
+    margin-top: 150px;
+    padding: 0 10%;
+  }
+
+  .slideOutNav ul {
+    li {
+      margin: 20px 0;
+      width: 50%;
+    }
+    a {
+      padding: 20px;
+    }
+  }
+
+
+  //form
+  .formContainer {
+    top: -35px;
+    margin-bottom: 150px;
+  }
+}

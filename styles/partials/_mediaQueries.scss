@@ -3,7 +3,7 @@
   .wrapper {
     width: 90%;
   }
-  // Header Section
+  // .homeHeader Section
   .homeHeader .home h2 {
     font-size: 6rem;
     padding-left: 20%;
@@ -15,7 +15,7 @@
     top: 110px;
   }
 
-  // Info Section
+  // .infoSection
   .infoSection .flexContainer .info {
     a {
       margin-left: 5px;
@@ -25,7 +25,7 @@
     }
   }
 
-  // Founder Section 
+  // .founder Section 
   .founder .flexContainer .founderText {
     padding-left: 40px;
     p {
@@ -37,7 +37,9 @@
 
 @media (max-width: 660px) {
   // Header Section
-  .largeNav {
+  .largeNav,
+  .contactNav,
+  .blogNav {
     display: none;
   }
 
@@ -69,7 +71,7 @@
     padding: 200px 0;
   }
 
-  //readMore Section
+  // .readMore Section
   .readMore {
     flex-direction: column;
   }
@@ -96,7 +98,7 @@
     margin: 0 auto;
   }
 
-  // Info Section
+  // .infoSection
   .infoSection .flexContainer .info {
     width: auto;
     margin: 15px;

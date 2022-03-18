@@ -1,5 +1,7 @@
 .formContainer {
   width: 70%;
+  position: relative;
+  top: -250px;
 }
 
 .contactForm,
@@ -8,8 +10,6 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top: -250px;
   padding-bottom: 30px;
 }
 
@@ -23,7 +23,7 @@
     background: transparent;
   }
   input {
-    width: 46%;
+    // margin: 10px;
   }
   .formInfo,
   textarea {
@@ -53,11 +53,12 @@ input, textarea {
 .formInfo,
 textarea,
 button {
-  margin: 20px 70px;
+  margin: 20px 10%;
 }
 
 input {
   border-bottom: 1px solid $green;
+  width: 45%;
 }
 
 textarea {
