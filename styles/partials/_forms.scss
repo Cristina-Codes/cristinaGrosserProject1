@@ -10,12 +10,14 @@
   flex-direction: column;
   position: relative;
   top: -250px;
+  padding-bottom: 30px;
 }
 
 .commentForm {
   box-shadow: none;
   background: transparent;
   top: -200px;
+  padding: 0;
   input,
   textarea {
     background: transparent;

@@ -236,7 +236,7 @@ h1 {
 
 h2 {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 700;
   line-height: 92px;
   color: #F8E71C;
@@ -247,9 +247,10 @@ h2 span {
 }
 
 .home h2 {
-  font-size: 8.3rem;
+  font-size: 7rem;
   font-weight: 400;
   line-height: 130px;
+  padding-left: 70px;
 }
 
 h3 {
@@ -658,7 +659,7 @@ nav .wrapper a:focus {
 }
 
 .blogHeader h2 {
-  padding: 0 0 70px 50px;
+  padding: 0 0 70px 30px;
 }
 
 .blogBody {
@@ -791,6 +792,7 @@ nav .wrapper a:focus {
           flex-direction: column;
   position: relative;
   top: -250px;
+  padding-bottom: 30px;
 }
 
 .commentForm {
@@ -798,6 +800,7 @@ nav .wrapper a:focus {
           box-shadow: none;
   background: transparent;
   top: -200px;
+  padding: 0;
 }
 .commentForm input,
 .commentForm textarea {
