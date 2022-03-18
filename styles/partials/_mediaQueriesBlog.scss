@@ -1,0 +1,65 @@
+@media (max-width: 1140px) {
+  .mission h4 {
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 980px) {
+  .blogHeader {
+    text-align: center;
+    max-height: 300px;
+    h2 {
+      padding: 0;
+      padding-bottom: 60px;
+    }
+  }
+
+  .flexContainer .aboutPosts .wrapper {
+    width: 90%;
+    display: flex;
+    .aboutDiv {
+      margin-top: 20px;
+    }
+    img {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .blogBody .flexContainer {
+    flex-direction: column;
+  }
+
+  .mission {
+    margin-top: 100px; 
+    .missionStatement {
+      border-left: none;
+      margin: 0 auto;
+    }
+    .movementContainer {
+      top: 0px;
+      .missionImgContainer {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .commentSection {
+    padding: 0;
+    margin: 0 auto;
+    .flexContainer {
+      flex-direction: row;
+    }
+  }
+
+  .commentFormContainer {
+    margin: 0 auto;
+    .formInfo {
+      margin: 0 20px;
+    } 
+    textarea {
+      margin: 0 auto;
+    }
+  }
+}
