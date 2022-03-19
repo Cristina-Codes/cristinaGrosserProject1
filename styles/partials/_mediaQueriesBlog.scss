@@ -23,6 +23,7 @@
     img {
       top: 0;
       right: 0;
+      width: 130%;
     }
   }
 
@@ -75,5 +76,107 @@
       margin: 20px auto;
       width: 100%;
     }
+  }
+}
+
+@media (max-width: 845px) {
+  .flexContainer .aboutPosts .wrapper img {
+    width: 150%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogHeader {
+    background-size: cover;
+    .flexContainer {
+    justify-content: center;
+    h2 {
+      padding: 0;
+      margin: 0;
+    }
+    }
+  }
+
+  .flexContainer .aboutPosts {
+    margin-top: 50px;
+    .wrapper {
+      width: 80%;
+      flex-direction: column;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .queryDiv {
+        padding: 0 25px;
+      }
+    }
+  }
+
+  .missionStatement {
+    p {
+      font-size: 0.7rem;
+    }
+  }
+
+  .mission h4 {
+    font-size: 1.7rem;
+  }  
+
+  .commentFormContainer .commentForm .formInfo {
+    flex-direction: column;
+    margin: 10px 0;
+    input {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blogHeader .flexContainer {
+    justify-content: flex-end;
+    h2 {
+      padding-bottom: 25px;
+    }
+  }
+
+  .flexContainer .aboutPosts .wrapper .queryDiv {
+    padding: 0;
+    .aboutDiv,
+    .postsDiv {
+      padding: 5px 5px 10px 15px;
+    }
+  }
+
+  .missionStatement {
+    width: 100%;
+    padding: 15px;
+    padding-left: 35px;
+    // margin: 0 auto;
+    text-align: center;
+    .date {
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .commentSection .flexContainer {
+    flex-direction: column;
+  }
+
+  .commentSection .comment {
+    .commentImg {
+      margin: 0 auto;
+    }
+    .commentText {
+      padding: 0;
+      .commentDate {
+        padding: 0 35px;
+        text-align: center;
+      }
+    }
+  }
+
+  .commentFormContainer .commentForm {
+    width: 90%;
   }
 }

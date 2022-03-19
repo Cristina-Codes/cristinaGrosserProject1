@@ -1240,6 +1240,7 @@ button {
   .flexContainer .aboutPosts .wrapper img {
     top: 0;
     right: 0;
+    width: 130%;
   }
 
   .blogBody .flexContainer {
@@ -1300,5 +1301,112 @@ button {
   .commentFormContainer .findMoreLink {
     margin: 20px auto;
     width: 100%;
+  }
+}
+@media (max-width: 845px) {
+  .flexContainer .aboutPosts .wrapper img {
+    width: 150%;
+  }
+}
+@media (max-width: 768px) {
+  .blogHeader {
+    background-size: cover;
+  }
+  .blogHeader .flexContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blogHeader .flexContainer h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .flexContainer .aboutPosts {
+    margin-top: 50px;
+  }
+  .flexContainer .aboutPosts .wrapper {
+    width: 80%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexContainer .aboutPosts .wrapper img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .flexContainer .aboutPosts .wrapper .queryDiv {
+    padding: 0 25px;
+  }
+
+  .missionStatement p {
+    font-size: 0.7rem;
+  }
+
+  .mission h4 {
+    font-size: 1.7rem;
+  }
+
+  .commentFormContainer .commentForm .formInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 10px 0;
+  }
+  .commentFormContainer .commentForm .formInfo input {
+    margin: 0;
+  }
+}
+@media (max-width: 480px) {
+  .blogHeader .flexContainer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .blogHeader .flexContainer h2 {
+    padding-bottom: 25px;
+  }
+
+  .flexContainer .aboutPosts .wrapper .queryDiv {
+    padding: 0;
+  }
+  .flexContainer .aboutPosts .wrapper .queryDiv .aboutDiv,
+.flexContainer .aboutPosts .wrapper .queryDiv .postsDiv {
+    padding: 5px 5px 10px 15px;
+  }
+
+  .missionStatement {
+    width: 100%;
+    padding: 15px;
+    padding-left: 35px;
+    text-align: center;
+  }
+  .missionStatement .date {
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .commentSection .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .commentSection .comment .commentImg {
+    margin: 0 auto;
+  }
+  .commentSection .comment .commentText {
+    padding: 0;
+  }
+  .commentSection .comment .commentText .commentDate {
+    padding: 0 35px;
+    text-align: center;
+  }
+
+  .commentFormContainer .commentForm {
+    width: 90%;
   }
 }
