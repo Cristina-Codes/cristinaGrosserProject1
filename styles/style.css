@@ -630,6 +630,11 @@ input[type=checkbox]:checked ~ .slideOutNav {
   margin-bottom: 0;
 }
 
+.infoSection .flexContainer .info a h4:hover,
+.infoSection .flexContainer .info a h4:focus {
+  color: #0E902D;
+}
+
 .banner img {
   display: block;
   max-width: 100%;
@@ -660,6 +665,9 @@ input[type=checkbox]:checked ~ .slideOutNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.founder .flexContainer .founderText p {
+  margin: 15px 0;
 }
 .founder .flexContainer .founderText .findMoreLink {
   -ms-flex-item-align: start;

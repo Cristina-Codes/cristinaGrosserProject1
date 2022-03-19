@@ -57,6 +57,7 @@ nav .wrapper {
     }
   }
 }
+// Fix when adding JavaScript: Use window width to remove .slideOutNav if above 660px to force it to disappear upon resizing.
 
 input[type=checkbox] {
   opacity: 0;
