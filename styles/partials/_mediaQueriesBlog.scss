@@ -4,7 +4,11 @@
   }
 }
 
+
+
+
 @media (max-width: 980px) {
+  // .blogHeader section
   .blogHeader {
     text-align: center;
     max-height: 300px;
@@ -14,6 +18,7 @@
     }
   }
 
+  // .aboutPosts Section
   .flexContainer .aboutPosts .wrapper {
     width: 90%;
     display: flex;
@@ -31,6 +36,7 @@
     flex-direction: column;
   }
 
+  // .mission Section
   .mission {
     margin-top: 100px; 
     .missionStatement {
@@ -46,6 +52,7 @@
     }
   }
 
+  // .comment Section
   .commentSection {
     padding: 0;
     margin: 0 auto;
@@ -79,13 +86,21 @@
   }
 }
 
+
+
+
 @media (max-width: 845px) {
   .flexContainer .aboutPosts .wrapper img {
     width: 150%;
   }
 }
 
+
+
+
+
 @media (max-width: 768px) {
+  // .blogHeader Section
   .blogHeader {
     background-size: cover;
     .flexContainer {
@@ -97,6 +112,7 @@
     }
   }
 
+  // .aboutPosts Section
   .flexContainer .aboutPosts {
     margin-top: 50px;
     .wrapper {
@@ -112,6 +128,7 @@
     }
   }
 
+  // .mission Section
   .missionStatement {
     p {
       font-size: 0.7rem;
@@ -131,7 +148,12 @@
   }
 }
 
+
+
+
+
 @media (max-width: 480px) {
+  // .blogHeader Section
   .blogHeader .flexContainer {
     justify-content: flex-end;
     h2 {
@@ -139,6 +161,7 @@
     }
   }
 
+  // .aboutPosts Section
   .flexContainer .aboutPosts .wrapper .queryDiv {
     padding: 0;
     .aboutDiv,
@@ -147,11 +170,11 @@
     }
   }
 
+  // .mission Section
   .missionStatement {
     width: 100%;
     padding: 15px;
     padding-left: 35px;
-    // margin: 0 auto;
     text-align: center;
     .date {
       padding: 0 20px;
@@ -159,6 +182,7 @@
     }
   }
 
+  // .comment Section
   .commentSection .flexContainer {
     flex-direction: column;
   }

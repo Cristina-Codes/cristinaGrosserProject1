@@ -23,8 +23,6 @@
       text-align: center;
     }
   }
-    
-  
 
   //form
   .formContainer {
@@ -39,6 +37,10 @@
   }
 }
 
+
+
+
+
 @media (max-width: 768px) {
   .formContainer {
     width: 90%;
@@ -50,10 +52,12 @@
   }
 }
 
+
+
+
+
 @media (max-width: 660px) {
   .slideOutNav {
-    left: 0;
-    right: 0;
     ul {
       flex-direction: row;
       width: 100%;
@@ -74,6 +78,10 @@
   }
 }
 
+
+
+
+
 @media (max-width: 480px) {
   // .contactHeader Section
   .contactHeader .flexContainer h2 {
@@ -90,7 +98,6 @@
       padding: 20px;
     }
   }
-
 
   //form
   .formContainer {

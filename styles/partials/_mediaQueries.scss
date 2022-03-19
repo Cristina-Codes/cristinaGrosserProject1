@@ -35,6 +35,10 @@
   }
 }
 
+
+
+
+
 @media (max-width: 660px) {
   // Header Section
   .largeNav,
@@ -49,8 +53,7 @@
 
   input[type=checkbox] { 
     &:checked ~ .slideOutNav {
-      right: -35px;
-      display: block;
+      width: 90vw;
     }
   }
 
@@ -108,10 +111,13 @@
   }
 }
 
+
+
+
+
 @media (max-width: 480px) {
   // .homeHeader Section
   .slideOutNav {
-    right: -450px;
     ul {
       flex-direction: row;
       flex-wrap: wrap;

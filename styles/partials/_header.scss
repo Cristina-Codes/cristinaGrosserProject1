@@ -38,10 +38,9 @@ nav .wrapper {
 }
 
 .slideOutNav {
-  display: none;
-  position: absolute;
+  position: fixed;
   top: 55px;
-  right: -205px;
+  right: -600px;
   z-index: 20;
   transition: all 0.75s ease;
   border: 2px solid $offWhite;
@@ -49,7 +48,6 @@ nav .wrapper {
   ul {
     display: flex;
     flex-direction: column;
-    width: 150px;
     li {
       width: 100%;
       margin: 20px 50px 20px 0;
@@ -64,7 +62,9 @@ input[type=checkbox] {
   opacity: 0;
   position: absolute; 
   &:checked ~ .slideOutNav {
-    right: -35px;
+    right: 0;
+    width: 95vw;
+    position: absolute;
   }
 }
 

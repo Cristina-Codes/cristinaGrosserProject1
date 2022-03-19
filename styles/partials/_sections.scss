@@ -1,4 +1,4 @@
-// Home .about
+// Homepage .about
 .about .flexContainer {
   flex-direction: column;
   padding: 200px 50px;
@@ -8,7 +8,7 @@
   }
 }
 
-// Home .readMore 
+// Homepage .readMore 
 .readMore {
   display: flex;
 }
@@ -67,7 +67,7 @@
   top: 20px;
 }
 
-// .info section
+// .infoSection
 .infoSection .flexContainer {
   flex-wrap: wrap;
   padding: 100px 0;
@@ -135,7 +135,7 @@
   }
 }
 
-// .gallery section
+// .gallery Section
 .gallery .flexContainer {
   justify-content: space-between;
   padding: 100px 0;
@@ -143,6 +143,9 @@
     width: calc((100% / 3) - 20px);
   }
 }
+
+
+
 
 // Contact Page
 .contactInfo {
@@ -178,6 +181,9 @@
   }
 }
 
+
+
+
 // Blog page
 .blogHeader h2 {
   padding: 0 0 70px 30px;
@@ -187,6 +193,7 @@
   background: $offWhite;
 }
 
+// .aboutPosts Section
 .flexContainer .aboutPosts {
   margin-top: 100px;
   .wrapper {
@@ -230,6 +237,7 @@
   padding-bottom: 5px;
 }
 
+// .mission Section
 .movementContainer {
   position: relative;
   top: -200px;
@@ -263,6 +271,7 @@
   }
 }
 
+// .comment Section
 .commentSection {
   width: 90%;
   padding: 20px 0 20px 20px;
