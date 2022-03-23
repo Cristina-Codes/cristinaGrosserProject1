@@ -405,9 +405,6 @@ nav .wrapper a:focus {
 }
 
 .slideOutNav {
-  position: fixed;
-  top: 55px;
-  right: -600px;
   z-index: 20;
   -webkit-transition: all 0.75s ease;
   transition: all 0.75s ease;
@@ -431,14 +428,16 @@ nav .wrapper a:focus {
   padding: 20px 50px 20px 30px;
 }
 
-input[type=checkbox] {
-  opacity: 0;
-  position: absolute;
+.hidden {
+  position: fixed;
+  top: 55px;
+  right: -600px;
 }
-input[type=checkbox]:checked ~ .slideOutNav {
-  right: 0;
-  width: 95vw;
+
+.showMe {
   position: absolute;
+  top: 55px;
+  right: 10px;
 }
 
 .homeHeader {
@@ -955,8 +954,19 @@ button {
     display: block;
   }
 
-  input[type=checkbox]:checked ~ .slideOutNav {
-    width: 90vw;
+  .slideOutNav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .slideOutNav ul li {
+    margin: 20px 10px;
+    text-align: center;
+  }
+  .slideOutNav ul a {
+    padding: 20px 10px;
   }
 
   .homeHeader .home h2 {
@@ -1172,26 +1182,6 @@ button {
   input {
     text-align: center;
     padding-bottom: 10px;
-  }
-}
-@media (max-width: 660px) {
-  .slideOutNav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    width: 100%;
-  }
-  .slideOutNav ul li {
-    margin: 20px 10px;
-    text-align: center;
-  }
-  .slideOutNav ul a {
-    padding: 20px 10px;
-  }
-
-  input[type=checkbox]:checked ~ .slideOutNav {
-    right: 0;
   }
 }
 @media (max-width: 480px) {

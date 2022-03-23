@@ -38,9 +38,6 @@ nav .wrapper {
 }
 
 .slideOutNav {
-  position: fixed;
-  top: 55px;
-  right: -600px;
   z-index: 20;
   transition: all 0.75s ease;
   border: 2px solid $offWhite;
@@ -58,15 +55,17 @@ nav .wrapper {
   }
 }
 
-// input[type=checkbox] {
-//   opacity: 0;
-//   position: absolute; 
-//   &:checked ~ .slideOutNav {
-//     right: 0;
-//     width: 95vw;
-//     position: absolute;
-//   }
-// }
+.hidden {
+  position: fixed;
+  top: 55px;
+  right: -600px;
+}
+
+.showMe {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+}
 
 .homeHeader {
   background-image: url(../planted-final-assets/home-image-1.jpg);

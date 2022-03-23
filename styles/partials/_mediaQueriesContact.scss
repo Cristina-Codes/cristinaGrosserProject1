@@ -56,32 +56,6 @@
 
 
 
-@media (max-width: 660px) {
-  .slideOutNav {
-    ul {
-      flex-direction: row;
-      width: 100%;
-      li {
-        margin: 20px 10px;
-        text-align: center;
-      }
-      a {
-        padding: 20px 10px;
-      }
-    }
-  }
-
-  // input[type=checkbox] {
-  //   &:checked ~ .slideOutNav {
-  //     right: 0;
-  //   }
-  // }
-}
-
-
-
-
-
 @media (max-width: 480px) {
   // .contactHeader Section
   .contactHeader .flexContainer h2 {

@@ -51,11 +51,19 @@
     display: block;
   }
 
-  // input[type=checkbox] { 
-  //   &:checked ~ .slideOutNav {
-  //     width: 90vw;
-  //   }
-  // }
+  .slideOutNav {
+    ul {
+      flex-direction: row;
+      width: 100%;
+      li {
+        margin: 20px 10px;
+        text-align: center;
+      }
+      a {
+        padding: 20px 10px;
+      }
+    }
+  }
 
   .homeHeader .home h2 {
     font-size: 4rem;
