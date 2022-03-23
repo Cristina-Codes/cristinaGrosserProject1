@@ -57,17 +57,16 @@ nav .wrapper {
     }
   }
 }
-// Fix when adding JavaScript: Use window width to remove .slideOutNav if above 660px to force it to disappear upon resizing.
 
-input[type=checkbox] {
-  opacity: 0;
-  position: absolute; 
-  &:checked ~ .slideOutNav {
-    right: 0;
-    width: 95vw;
-    position: absolute;
-  }
-}
+// input[type=checkbox] {
+//   opacity: 0;
+//   position: absolute; 
+//   &:checked ~ .slideOutNav {
+//     right: 0;
+//     width: 95vw;
+//     position: absolute;
+//   }
+// }
 
 .homeHeader {
   background-image: url(../planted-final-assets/home-image-1.jpg);

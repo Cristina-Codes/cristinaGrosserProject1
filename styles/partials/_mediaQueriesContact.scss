@@ -71,11 +71,11 @@
     }
   }
 
-  input[type=checkbox] {
-    &:checked ~ .slideOutNav {
-      right: 0;
-    }
-  }
+  // input[type=checkbox] {
+  //   &:checked ~ .slideOutNav {
+  //     right: 0;
+  //   }
+  // }
 }
 
 

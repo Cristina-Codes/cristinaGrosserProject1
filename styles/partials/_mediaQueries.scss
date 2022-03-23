@@ -51,11 +51,11 @@
     display: block;
   }
 
-  input[type=checkbox] { 
-    &:checked ~ .slideOutNav {
-      width: 90vw;
-    }
-  }
+  // input[type=checkbox] { 
+  //   &:checked ~ .slideOutNav {
+  //     width: 90vw;
+  //   }
+  // }
 
   .homeHeader .home h2 {
     font-size: 4rem;
