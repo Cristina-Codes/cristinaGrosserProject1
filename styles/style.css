@@ -815,14 +815,6 @@ nav .wrapper a:focus {
 .commentSection .comment {
   padding: 20px 0 50px 0;
 }
-.commentSection .comment .commentImg {
-  width: 40%;
-  max-width: 82px;
-}
-.commentSection .comment .commentImg img {
-  display: block;
-  width: 100%;
-}
 .commentSection .comment .commentText {
   padding-left: 30px;
 }
