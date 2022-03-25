@@ -395,19 +395,22 @@ nav .wrapper a:focus {
   position: relative;
 }
 
+.mobileContainer {
+  display: none;
+}
+
 .slideOutIcon {
   color: #F0EFED;
   position: absolute;
   right: 5%;
-  display: none;
   padding: 10px;
   padding-top: 0;
 }
 
 .slideOutNav {
   z-index: 20;
-  -webkit-transition: all 0.75s ease;
-  transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease-in;
+  transition: all 0.75s ease-in;
   border: 2px solid #F0EFED;
   background: #2C2C2C;
 }
@@ -950,7 +953,7 @@ button {
     display: none;
   }
 
-  .slideOutIcon {
+  .mobileContainer {
     display: block;
   }
 

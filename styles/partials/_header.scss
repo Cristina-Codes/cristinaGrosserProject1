@@ -28,18 +28,21 @@ nav .wrapper {
   position: relative;
 }
 
+.mobileContainer {
+  display: none;
+}
+
 .slideOutIcon {
   color: $offWhite;
   position: absolute;
   right: 5%;
-  display: none;
   padding: 10px;
   padding-top: 0;
 }
 
 .slideOutNav {
   z-index: 20;
-  transition: all 0.75s ease;
+  transition: all 0.75s ease-in;
   border: 2px solid $offWhite;
   background: $black;
   ul {

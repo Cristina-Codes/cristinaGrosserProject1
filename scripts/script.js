@@ -8,5 +8,3 @@ navIcon.addEventListener('click', function(){
   slideOutNav.classList.toggle('showMe');
 })
 
-//removing the slideOutNav if window is resized above 660px
-
