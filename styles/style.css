@@ -216,6 +216,7 @@ html {
 html {
   font-size: 125%;
   /* 20px */
+  scroll-behavior: smooth;
 }
 
 body {
