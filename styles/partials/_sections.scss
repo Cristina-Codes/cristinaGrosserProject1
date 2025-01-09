@@ -8,7 +8,7 @@
   }
 }
 
-// Homepage .readMore 
+// Homepage .readMore
 .readMore {
   display: flex;
 }
@@ -54,7 +54,7 @@
   }
 }
 
-//final image styling 
+//final image styling
 .leftImage {
   box-shadow: $rightShadow;
   position: relative;
@@ -99,7 +99,7 @@
       }
     }
   }
-  .info3, 
+  .info3,
   .info4 {
     margin-bottom: 0;
   }
@@ -111,7 +111,6 @@
     color: $green;
   }
 }
-
 
 // .banner section
 .banner img {
@@ -155,9 +154,6 @@
   }
 }
 
-
-
-
 // Contact Page
 .contactInfo {
   width: 30%;
@@ -176,7 +172,7 @@
     }
   }
   p {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: $bold;
     letter-spacing: 2px;
     padding-left: 10px;
@@ -191,9 +187,6 @@
     }
   }
 }
-
-
-
 
 // Blog page
 .blogHeader h2 {
@@ -292,11 +285,33 @@
       padding-left: 30px;
       .commentDate {
         font-weight: $bold;
-        font-family: 'Josefin Sans', sans-serif;
+        font-family: "Josefin Sans", sans-serif;
       }
       p {
         font-size: 0.8rem;
       }
     }
   }
+}
+
+// Designs page
+.designs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 100px;
+}
+
+.design-item {
+  text-align: center;
+}
+
+.design-item img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.design-item p {
+  margin: 0 0 10px;
+  color: #074115;
 }
